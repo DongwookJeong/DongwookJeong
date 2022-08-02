@@ -1,0 +1,18 @@
+
+@mixin flexsetting($flex, $justify, $align) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+
+
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  background-color: salmon;
+@include flexsetting(flex, space-around, center);
+
+}

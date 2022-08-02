@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  /* *유니버셜 */
+  *{box-sizing:border-box}
+  main{
+    width: 500ox;
+    height: 500px;
+    border: 2px solid black;
+    padding: 10px;
+
+    /* justify-content 부모 너비 - 자식 너비 / 2 */
+    /* padding으로 가운데 정렬하기에는 찝찝 */
+    /* box-sizing: border-box; */
+    /* margin은 틀어짐이 생길 경우가 많다. */
+  }
+
+  .dp-flex{display: flex;}
+  .justfy-content-center{justify-content: center;}
+  .align-items-right {align-items: center;}
+  
+  main > section{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;}
+    </style>
+</head>
+
+<body>
+  <main class="dp-flex justfy-content-center align-items-center">
+    <section class="dp-flex justfy-content-center align-items-center">
+      <article>hello
+      </article>
+    </section>
+  </main>
+
+  <section>
+    div 
+  </section>
+</body>
+</html>

@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+#root > main {
+  width: 100vw;
+  height: 100vh;
+}
+#root > main > header {
+  width: inherit;
+  height: 7vh;
+  background-color: white;
+}
+#root > main > section {
+  width: inherit;
+  height: 60vh;
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+}
+#root > main > section > div:nth-child(1) {
+  width: 90vw;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-size: 70px;
+  position: relative;
+  bottom: 70px;
+  left: 30px;
+}
+#root > main > section > div:nth-child(2) {
+  width: 90vw;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-size: 7px;
+  position: relative;
+  bottom: 70px;
+  left: 30px;
+}
+#root > main > div {
+  width: 30vw;
+  height: 20vh;
+  background-color: gray;
+  left: 1300px;
+  top: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#root > main > div > h1 {
+  width: 20vh;
+  height: 7vh;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+#root > main > div > div {
+  width: 20vh;
+  height: 7vh;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=sample.css.map */

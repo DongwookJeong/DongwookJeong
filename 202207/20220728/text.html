@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{box-sizing: border-box; padding: 0; margin: 0;}
+
+    body > div{
+      width: 100vh;
+      height: 100vh;
+      background-color: aqua;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body > div > div{
+      width: 80vw;
+      height: 80vh;
+      background-color: aquamarine;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body > div > div > div{
+      width: 60vw;
+      height: 60vh;
+      background-color: blueviolet;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    body > div > div > div > div{
+      width: 40vw;
+      height: 40vh;
+      background-color: blue;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    body > div > div > div > div> div{
+      width: 20vw;
+      height: 20vh;
+      background-color: beige;
+
+      display: flex;
+      justify-content: center;
+    }
+    body > div > div > div > div:nth-child(2) > div:nth-child(1){width: 300px; height: 80%; background-color: black;}
+    body > div > div > div > div:nth-child(2) > div:nth-child(2){width: 300px; height: 80%; background-color: gray;}
+    body > div > div > div > div:nth-child(2) > div:nth-child(3){width: 300px; height: 80%; background-color: red;}
+    .border-color-black{border-color: black;}
+  </style>
+  </head>
+  <body>
+    <div class="border-color-black">
+      <div  class="border-color-black">
+        <div  class="border-color-black">
+          <div  class="border-color-black">
+            <div  class="border-color-black">
+
+            </div>
+          </div>
+          <div>
+            <div  class="border-color-black"></div>
+            <div  class="border-color-black"></div>
+            <div  class="border-color-black"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

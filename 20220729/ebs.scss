@@ -1,0 +1,58 @@
+header{
+  width: 100vw;
+  height: 10vh;
+  border: 1px solid black;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+header > div:nth-child(1){
+  width: 20vw;
+  height: 7vh;
+  border: 1px solid red;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+header > div:nth-child(1) > div:nth-child(1){
+  width: inherit;
+  height: inherit;
+  border: 1px solid salmon;
+}
+header > div:nth-child(1) > div:nth-child(2){
+  width: inherit;
+  height: inherit;
+  border: 1px solid yellow;
+}
+header > div:nth-child(2){
+  width: 60vw;
+  height: inherit;
+  border: 1px solid blanchedalmond;
+}
+header > div:nth-child(3){
+  width: 20vw;
+  height: inherit;
+  border: 1px solid salmon;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+header > div:nth-child(3) > div:nth-child(1){
+  width: 6vw;
+  height: inherit;
+  border: 1px solid blue;
+}
+header > div:nth-child(3) > div:nth-child(2){
+  width: 6vw;
+  height: inherit;
+  border: 1px solid green;
+}
+header > div:nth-child(3) > div:nth-child(3){
+  width: 6vw;
+  height: inherit;
+  border: 1px solid peru;
+}

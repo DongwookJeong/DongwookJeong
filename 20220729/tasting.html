@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{box-sizing: border-box; padding: 0; margin: 0;}
+    div {
+      background-color: yellow;
+      width: 50vw;
+      height: 50vh;
+      min-width: 500px;
+      max-width: 1000px;
+      min-height: 500px;
+      max-height: 1000px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="element"></div>
+  <button id="trigger">here</button>
+<script>
+  const element =document.getElementById("element");
+  const trigger= document.getElementById("trigger");
+  let colorbox = ["salmon", "orenge", "red", "cadeblue", "brown"]
+  let count = 0;
+  trigger.addEventListener('click', function () {
+    element.style.backgroundcolor=colorbox[count];
+    count ++;
+    console.log('hello');
+    if(count >= colorbox.length){
+      count = 0
+    }
+  })
+</script>
+</body>
+</html>

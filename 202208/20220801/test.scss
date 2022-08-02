@@ -1,0 +1,13 @@
+$color: blue;
+$display-flex: flex;
+
+
+div 
+{
+  background-color: $color;
+  display: $display-flex;
+}
+
+p
+{background-color: $color;
+}

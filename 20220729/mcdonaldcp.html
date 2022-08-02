@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{box-sizing: border-box; padding: 0; margin: 0; height: 100%;}
+body{
+  width: 100vw;
+  height: 100%;
+}
+main{
+  width: inherit;
+  height: 95%;
+}
+    header{
+      width: 100vw;
+      height: 3vh;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+    }
+    header > div:nth-child(1){
+      width: 40vw;
+      height: inherit;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: space-around;
+
+    }
+    header > div:nth-child(1) > div{
+      width: 5vw;
+      height: inherit;
+      background-color: yellow;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    header > div:nth-child(2){
+      width: 40vw;
+      height: inherit;
+      background-color: blue;
+      display: flex;
+      justify-content: space-around;
+    }
+    header > div:nth-child(2) > div{
+      width: 5vw;
+      height: inherit;
+      background-color: tomato;
+      display: flex;
+      justify-content: space-around;
+
+    }
+/* header 스타일 끝 */
+main > section{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+main > section > div:nth-child(1){
+  height: 20vh;
+  width: inherit;
+  background-color: pink;
+}
+/* 섹션 영상 들어가는 자리 끝 */
+main > section > div:nth-child(2) > div:nth-child(1){
+  height: 10vh;
+  width: inherit;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 맥도날드 라이브 끝 */
+main > section > div:nth-child(2) > div:nth-child(2){
+  height: 15vh;
+  width: inherit;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > div:nth-child(2) > div:nth-child(3){
+  height: 15vh;
+  width: inherit;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
+  height: 10vh;
+  width: 15vw;
+  background-color: salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2){
+  height: 10vh;
+  width: 15vw;
+  background-color: saddlebrown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(3){
+  height: 10vh;
+  width: 15vw;
+  background-color: tan;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
+  height: 10vh;
+  width: 15vw;
+  background-color: thistle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(2){
+  height: 10vh;
+  width: 15vw;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}main > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(3){
+  height: 10vh;
+  width: 15vw;
+  background-color: violet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  main > section > div:nth-child(2) > div:nth-child(4){
+  height: 10vh;
+  width: inherit;
+  background-color: firebrick;
+}
+footer{
+  height: 5%;
+  width: inherit;
+  background-color: aqua;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <div>맥 아이콘</div>
+      <div>메뉴</div>
+      <div>가게</div>
+      <div>신메뉴</div>
+      <div>약력</div>
+    </div>
+    <div>
+      <div>발주</div>
+      <div>뭐래</div>
+      <div>언어</div>
+      <div>검색</div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div>영상</div>
+      <div>
+        <div>맥도날드 라이브</div>
+        <div>
+          <div>
+            <div>이미지</div>
+            <div>코멘트</div>
+          </div>
+          <div>
+            <div>이미지</div>
+            <div>코멘트</div>
+          </div>
+          <div>
+            <div>이미지</div>
+            <div>코멘트</div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>이미지</div>
+            <div>코멘트</div>
+          </div>
+          <div>
+            <div>이미지</div>
+            <div>코멘트</div>
+          </div>
+          <div>
+            <div>이미지</div>
+            <div>코멘트</div>
+          </div>
+        </div>
+        <div>
+          플러스 아이콘 7
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

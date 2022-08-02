@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* reset */
+    
+    body > div{
+      width: 70vw;
+      min-height: 100vh;
+      background-color: #333;
+    }
+
+    body > div > header{
+      width: inherit;
+      height: 10vh;
+      background-color: #222;
+    }
+
+    body > div > main{
+      height: 50vh;
+      background-color: #ccc;
+    }
+    
+    body > div > header > nav > ul > li{
+      width: 200px;
+      background-color: #aaa;
+      display: inline-block;
+    }
+
+    body > div > main > section{
+      width: 67.4vw;
+      height: 30vh;
+      border: 1px dashed #000;
+      padding: 20px;
+    }
+
+    body > div > main > section > aside{
+      width: 30vw;
+      height: inherit;
+      display:inline-block;
+    }
+    body > div > main > section > article{
+      width: 30vw;
+      height: inherit;
+      display:inline-block;
+    }
+
+    body > div > footer{
+      height: 20vh;
+      background-color: cadetblue;
+    }
+
+    .bg-color-fff{
+      background-color: #fff;
+    }
+    .bg-color-salmon{
+      background-color: salmon;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <header>
+      <nav>
+        <ul>
+          <li>menu-1</li>
+          <li>menu-2</li>
+          <li>menu-3</li>
+          <li>menu-4</li>
+          <li>menu-5</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <aside class="bg-color-fff">this is aside</aside>
+        <!-- article 스크롤하면 계속해서 나오는 글, 블로그의 경우 사용 -->
+        <article class="bg-color-salmon">this is article</article>
+      </section>
+    </main>
+    <footer></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{box-sizing: border-box; padding: 0; margin: 0;}
+  
+  body > div{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body > div > div{
+    background-color: pink;
+    width: 90vw;
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > div > div > div:nth-child(1){
+    background-color: aliceblue; width: 45vw; height: 45vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > div > div:nth-child(1) > div:nth-child(2){
+    background-color: blue; width: 45vw; height: 45vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > div > div > div:nth-child(2) div:nth-child(1){
+    background-color: green; width: 20vw; height: 20vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > div > div > div:nth-child(2) div:nth-child(2){
+    background-color: green; width: 20vw; height: 20vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > div > div > div:nth-child(2) div:nth-child(3){
+    background-color: green; width: 20vw; height: 20vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > div > div > div:nth-child(2) div:nth-child(4){
+    background-color: green; width: 20vw; height: 20vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > div > div > div:nth-child(2){
+    background-color: yellow; width: 45vw; height: 45vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    <div>
+    </div>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

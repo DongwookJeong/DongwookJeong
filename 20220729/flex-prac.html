@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{box-sizing: border-box; margin: 0; padding: 0;}
+body{width: 100vw;
+height: 100vh;}
+header{
+  height: 50vh;
+  width: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header > div:nth-child(1){
+  width: 80vw;
+  height: 25vh;
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header > div:nth-child(1) > div{
+  width: 60vw;
+  height: 10vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header > div:nth-child(2){
+  width: 80vw;
+  height: 25vh;
+
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header > div > div{
+  width: 60vw;
+  height: 20vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header > div > div{
+  width: 60vw;
+  height: 20vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bg-color-red{background-color: red;}
+.bg-color-orange{background-color: orange;}
+.bg-color-yellow{background-color: yellow;}
+.bg-color-green{background-color: green;}
+.bg-color-blue{background-color: blue;}
+.bg-color-navy{background-color: navy;}
+
+  </style>
+</head>
+<body>
+  <header class="bg-color-red">
+    <div class="bg-color-orange">
+      <div class="bg-color-yellow">
+        b
+      </div>
+      <div class="bg-color-green">
+        a
+      </div>
+    </div>
+    <div class="bg-color-navy">
+      <div class="bg-color-orange">s
+      </div>
+
+      <div class="bg-color-yellow">i
+      </div>
+
+      <div class="bg-color-green">c
+      </div>
+    </div>
+  </header>
+</body>
+</html>
