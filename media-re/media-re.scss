@@ -1,0 +1,42 @@
+// fail2
+
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+
+@mixin width-height-set($width, $height) {
+  width: $width;
+  height: $height;
+  
+}
+
+
+@mixin flex-set($flex, $justify, $align, $direction, $flex-wrap) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $flex-wrap;
+}
+
+@media(max-width:768px){
+  #root{
+    width: $width;
+    height: $height;
+
+
+    @include flex-set(flex, center, center, column);
+    
+    & > ul{
+      list-style: none;
+      @include width-height-set(100vw, 100vh);
+    }
+
+    & > ul > li{
+
+      
+      @include width-height-set(700px, 700px);
+
+      @include flex-set(flex, center, center, column);
+    }
+  }
+}

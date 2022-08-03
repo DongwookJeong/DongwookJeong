@@ -1,0 +1,40 @@
+$col-1:rgb(35, 124, 240);
+$col-2:rgb(179, 176, 176);
+// @mixin 수업 후 position 활용해보기
+// 다음 할 것 $args에 대해서 알아보기
+@mixin flex-setting($flex,$justify, $align, $flex-direction){
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $flex-direction;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+@mixin position-setting($position, $top:null, $bottom:null, $right:null, $left:null) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+#root{
+  width: 100vw;
+  height: 100vh;
+
+header{
+  background-color: $col-1;
+
+  @include width-height(inherit, 90vh)
+}
+header > div{
+  background-color: $col-2;
+
+  @include width-height(40vw, 40vh);
+  @include position-setting(absolute,300px,400px);
+}
+
+}

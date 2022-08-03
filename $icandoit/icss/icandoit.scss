@@ -1,0 +1,60 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+$col-1:white;
+$col-2:gray;
+
+
+@mixin flex-set($justify-content, $align-items, $flex-direction:row,$flex-wrap:wrap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items:$align-items;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+
+}
+
+#root{
+  @include width-height (100vw, 100vh);
+  @include flex-set(center, center, column);
+
+
+  & > div{
+    @include width-height(100vw, 50vh);
+    background-color : $col-2;
+  }
+  & > section{
+    @include flex-set(flex-start, center, column);
+    padding: 2.5vw;
+  }
+  // 불필요한 값으로 판명
+  // & > section > h1{
+  // @include width-height(, )}
+  // 모바일
+  @media(max-width:768px){}
+  // 태블릿
+  @media(min-width:769px)
+    and(max-width:1024px){
+      & > div{
+      @include width-height(90vw, 30vh);}
+    }
+  // 웹은 justify 값 flex-end
+  @media(min-width:1025px){
+    & > div{
+    @include width-height(100vw,100vh);
+    position: relative;
+    }
+    & > section{
+      background-color: $col-2;
+      @include flex-set(center, center, row);
+      position: absolute;
+      & > p{
+        width: 50vw;
+      }
+    }
+  }
+}
