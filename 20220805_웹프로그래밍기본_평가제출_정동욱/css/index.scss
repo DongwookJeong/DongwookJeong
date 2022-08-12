@@ -1,0 +1,307 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+// col set
+$col-1:#2196F3;
+$col-2:#004EA2;
+$col-3:#CDCDCD;
+$col-4:#FFFFFF;
+// mixin set
+@mixin flex-set($direction, $content, $items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+}
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+// root 시작
+#root{
+  @include flex-set(column,flex-start,center);
+  @include width-height(100vw,100vh);
+
+  @media(max-width: 428px){
+
+    & > header{
+      @include flex-set(column, center, center);
+      @include width-height(100vw,93px);
+      background-color: #2196F3;
+    }
+    & > header > div:nth-child(1){
+      @include width-height(100vw,45px);
+      background-color: #2196F3;
+    }
+    & > header > div:nth-child(2){
+      @include flex-set(row, space-around, center);
+      @include width-height(100vw,48px);
+    }
+    & > header > div:nth-child(2) > div:nth-child(1){
+      @include width-height(38px,19px);
+      background-color: #2196F3;
+      color: #FFFFFF;
+    }
+    & > header > div:nth-child(2) > div:nth-child(2){
+      @include flex-set(row, space-around, center);
+      @include width-height(162.44px,19.84px);
+      background-color: #2196F3;
+      color: #FFFFFF;
+    }
+    & > header > div:nth-child(2) > div:nth-child(3){
+      @include width-height(38px,19.84px);
+      background-color: #2196F3;
+      color: #FFFFFF;
+    }
+    & > header > div:nth-child(3){
+      @include width-height(58px,20px);
+      background-color: $col-4;
+      color: $col-2;
+    }
+    & > header > section{
+      @include flex-set(row, center, center);
+      @include width-height(428px,50px);
+      background-color: $col-4;
+    }
+    & > header > section > div:nth-child(1){
+      @include width-height(189px,35px);
+      background-color: $col-2;
+      color: $col-4;
+    }
+    & > header > section > div:nth-child(2){
+      @include width-height(7.18px,12.47px);
+      background-color: $col-4;
+      color: $col-1;
+    }
+    // 해더 끝
+    & > main{
+      @include flex-set(column,flex-start,center);
+      @include width-height(100vw,100vh);
+    }
+    & > main > ul{
+      @include flex-set(column,center,center);
+      @include width-height(100vw,150px);
+      font-size: 8px;
+    }
+    & > main > ul > li{
+      @include width-height(30vw,90px);
+      color:#004EA2;
+    }
+    & > main > article{
+      @include flex-set(column,flex-start,center);
+      @include width-height(100vw,95vh);
+      background-color: $col-4;
+    }
+    & > main > article > div:nth-child(1){
+      @include flex-set(column,center,center);
+      @include width-height(100vw,645px);
+      background-color: $col-4;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+      @include width-height(359px,75px);
+      background-color: $col-4;
+      color: $col-1;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+      @include width-height(359px,77px);
+      @include flex-set(row,center,center);
+      background-color: $col-4;
+      color: $col-1;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+      @include width-height(241px,77px);
+      @include flex-set(row,center,center);
+      background-color: $col-4;
+      color: $col-1;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2){
+      @include width-height(118px,645px);
+      @include flex-set(row,center,center);
+      background-color: $col-4;
+      color: $col-1;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+      @include width-height(359px,2px);
+      @include flex-set(row,flex-end,center);
+      background-color: $col-4;
+      color: $col-3;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1){
+      @include width-height(10px,2px);
+      background-color: $col-4;
+      color: $col-3;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2){
+      @include width-height(33px,2px);
+      background-color: $col-4;
+      color: $col-3;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(3){
+      @include width-height(115px,2px);
+      background-color: $col-4;
+      color: $col-3;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(2) > h1{
+      @include width-height(25px,5px);
+      background-color: $col-4;
+      color: $col-3;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(2) > p{
+      @include width-height(278px,40px);
+      background-color: $col-4;
+      color: $col-1;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(3){
+      @include width-height(100vw,347px);
+      background-color: $col-1;
+      color: $col-3;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(4){
+      @include width-height(138px,77px);
+      background-color: $col-1;
+      color: $col-4;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(5){
+      @include width-height(320px,66px);
+      background-color: $col-1;
+      color: $col-4;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(6){
+      @include width-height(355px,3px);
+      background-color: $col-1;
+      color: $col-4;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(7){
+      @include width-height(365px,48px);
+      @include flex-set(row,flex-end,center);
+      background-color: $col-1;
+      color: $col-4;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(7) > div:nth-child(1){
+      @include width-height(153.66px,25px);
+      background-color: $col-1;
+      color: $col-4;
+    }
+    & > main > article > div:nth-child(1) > div:nth-child(7)> div:nth-child(2){
+      @include width-height(222px,46px);
+      background-color: $col-1;
+      color: $col-4;
+    }
+    // 여기는 hrd까지입니다.
+    & > main > article > div:nth-child(1) > div:nth-child(8){
+      @include width-height(7px,13px);
+      background-color: $col-1;
+      color: $col-4;
+    }
+    & > main > article > section{
+      @include width-height(394px,120px);
+      @include flex-set(column,center,center);
+      background-color: $col-1;
+    }
+    & > main > article > section > div:nth-child(1){
+      @include width-height(428px,20px);
+      @include flex-set(row,center,center);
+      background-color: $col-1;
+    }
+    & > main > article > section > div:nth-child(1) > div:nth-child(1){
+      @include width-height(30vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(1) > div:nth-child(2){
+      @include width-height(15vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(1) > div:nth-child(3){
+      @include width-height(10vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+  
+    }
+    & > main > article > section > div:nth-child(2){
+      @include width-height(428px,20px);
+      @include flex-set(row,center,center);
+      background-color: $col-1;
+    }
+    & > main > article > section > div:nth-child(2) > div:nth-child(1){
+      @include width-height(15vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(2) > div:nth-child(2){
+      @include width-height(10vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(2) > div:nth-child(3){
+      @include width-height(10vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(2) > div:nth-child(4){
+      @include width-height(15vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(3){
+      @include width-height(428px,20px);
+      @include flex-set(row,center,center);
+      background-color: $col-1;
+    }
+    & > main > article > section > div:nth-child(3) > div:nth-child(1){
+      @include width-height(30vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(3) > div:nth-child(2){
+      @include width-height(17vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(4){
+      @include width-height(428px,20px);
+      @include flex-set(row,center,center);
+      background-color: $col-1;
+    }
+    & > main > article > section > div:nth-child(4) > div:nth-child(1){
+      @include width-height(30vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(4) > div:nth-child(2){
+      @include width-height(15vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    & > main > article > section > div:nth-child(4) > div:nth-child(3){
+      @include width-height(10vw,18px);
+      background-color: $col-4;
+      color: $col-1;
+      font-size: 8px;
+      font-style: normal;
+    }
+    // 지렁이 소시지 같이 생긴부분 끝
+    // 돈트 드웰 시작
+  }
+}
