@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div id="root">
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+
+  </div>
+
+  <script>
+    let colorSet = ["salmon","red","orange","yellow","green", "pink"];
+
+    let a;
+    a = document.getElementById("root");
+
+    console.log(colorSet);
+
+    for (let index = 0; index < colorSet.length; index = index + 1) {
+        a.children[index].style.backgroundColor = colorSet[index];
+    }
+
+
+
+
+
+
+
+    let me = [
+      "피카츄",
+      "라이츄",
+      "파이리",
+      "꼬부기",
+      "버터풀",
+      "야도란",
+      "피존투",
+      "또가스"
+    ];
+
+    console.log(me[me.length-1])
+    // 소괄호 안 = 반복조건, 얼마나 반복할 것인지 제어
+    // (1)변수 선언(let index=0)/조건(index < 6)/다음행동(index = index + 1)
+    // {}알고리즘
+  </script>
+</body>
+</html>

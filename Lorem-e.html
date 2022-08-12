@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <p id="lorem">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione cumque nulla quaerat, nam perspiciatis saepe vel nostrum suscipit? Autem temporibus incidunt odit dolor ab perspiciatis inventore explicabo nemo dolores repellendus.
+  Consequuntur tenetur repellendus, ullam voluptates quis praesentium dolore libero eos alias? Pariatur excepturi ipsa sunt repellendus atque similique neque officia officiis possimus. Harum aspernatur natus nobis corporis enim nulla odio.
+  Molestiae, accusamus nihil. Voluptatum obcaecati soluta laboriosam tempore sunt quas voluptas, eum in est id dignissimos nulla autem velit consequatur sequi. Dicta expedita sed vel similique. Eum labore sequi laboriosam?
+  Numquam, maxime. Officia earum ullam aliquam at cumque culpa quos ducimus dolore? Eius sit dolorum accusamus laborum nesciunt veniam et a, voluptatum maxime saepe corporis qui, delectus exercitationem neque totam.
+  Excepturi blanditiis corrupti doloremque? Adipisci a maiores illum minus ex, molestias iste numquam ut repellendus animi obcaecati vel, sapiente nemo libero possimus in repudiandae blanditiis soluta. Nam animi maxime iure!
+  </p>
+<body>
+  
+  <script>
+    let text ="lorem"
+    let p = window.document.children[0].children[1].children[0];
+    console.log();
+
+    console.dir(window.document.children[0].children[1].children[0]);
+    let lorem = document.getElementById('lorem').textContent;
+    console.dir(lorem[40]);
+    console.log(window.document.children[0].children[1].children[0].length);
+    let count = 0;
+    for(let i = 0; i < p.outerText.length;i++){
+      if(window.document.children[0].children[1].children[0].outerText[i] ==="e"){
+        count++;
+    }
+  }
+    let inspect = 0;
+    for(let i = 0; i < p.inspectData.length;i++) {
+      if(p.inspectData[1]==="a"+"e"){
+        count++
+      }
+    }
+  console.dir(inspectData);
+    console.log(count + 'count 값은 이것입니다');
+  </script>
+</body>
+</html>
