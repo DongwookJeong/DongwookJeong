@@ -1,0 +1,30 @@
+	flex-direction - row(초기값), column(위아래)
+
+justify-content - flex-start(줄의 시작점), flex-end(줄의 끝점), center(가운데맞춤),
+space-between(왼, 오른벽에 붙이고 나머니 균등), space-round(모두 균등)
+
+align-items - stretch(초기값), flex-start(부모요소 윗), flex-end(부모요소 아랫), center,
+baseline(베이스라인)
+
+*{}
+$
+$
+
+@mixin---(){;;;}
+@mixin---(){;;;}
+
+#root{
+@include---(,);
+@include---(,);
+
+& > ---{}
+
+@media() and (){
+& > ---{
+include --- ();
+  }
+ }
+}
+
+
+}
