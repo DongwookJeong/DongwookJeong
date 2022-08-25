@@ -1,0 +1,151 @@
+*{margin: 0; box-sizing: border-box; padding: 0;}
+// col-set
+$col-1:#2196F3;
+$col-2:#004EA2;
+$col-3:#CDCDCD;
+$col-4:#FFFFFF;
+
+@mixin flex-set($direction, $items, $content) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $items;
+  justify-content: $content;
+}
+@mixin width-height($width, $height){
+  width: $width;
+  height: $height;
+}
+#root{
+  @include flex-set(column,center,flex-start);
+  @include width-height(100vw, 100vh);
+
+  @media(max-width:768px){
+    & > header{
+    @include flex-set(column,center, center);
+    @include width-height(100vw, 10vh);
+    }
+    & > header > div{
+      @include width-height(100vw,33%);
+      background-color:#2196F3;
+    }
+    & > header > main{
+      @include flex-set(row,center, space-around);
+      @include width-height(100vw, 33%);
+      background-color: $col-1;
+    }
+    & > header > main > div:nth-child(1){
+    @include flex-set(column, left, space-around);
+    @include width-height(38px, 19px);
+    }
+    & > header > main > div:nth-child(1) > u:nth-child(1){
+      @include width-height(25px, 3px);
+      background-color: #2196F3;
+      color: #FFFFFF;
+      }
+      & > header > main > div:nth-child(1) > u:nth-child(2){
+        @include width-height(38px, 3px);
+      background-color: #2196F3;
+      color: #FFFFFF;
+      }
+      & > header > main > div:nth-child(2){
+        @include flex-set(row, center, space-around);
+        @include width-height(40%, 19px);
+      background-color: #2196F3;
+      color: #FFFFFF;
+      }
+      & > header > main > div:nth-child(2) > u:nth-child(1){
+        @include width-height(30%, 33%);
+      background-color: #2196F3;
+      color: #FFFFFF;
+      }
+      & > header > main > div:nth-child(2) > u:nth-child(2){
+        @include width-height(10%, 33%);
+      background-color: #2196F3;
+      color: #FFFFFF;
+      }
+      & > header > main > div:nth-child(2) > u:nth-child(3){
+        @include width-height(30%, 33%);
+      background-color: #2196F3;
+      color: #FFFFFF;
+      }
+      & > header > main > div:nth-child(3){
+        @include width-height(15%, 40%);
+      background-color: #FFFFFF;
+      color: #2196f2;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      text-align: center;
+      }
+      & > header > section{
+        @include width-height(100vw, 40%);
+        @include flex-set(row, center, space-around);
+      background-color: $col-4;
+      }
+      & > header > section > div:nth-child(1){
+        @include width-height(3%, 40%);
+      background-color: $col-4;
+      }
+      & > header > section > div:nth-child(2){
+        @include width-height(40%, 60%);
+        background-color: $col-2;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+      }
+      & > header > section > div:nth-child(3){
+        @include width-height(3%, 60%);
+        background-color: $col-4;
+        color: $col-1;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      & > main{
+        @include width-height(100vw, 90%);
+        @include flex-set(column, center, flex-start);
+      }
+      & > main > ul{
+        @include width-height(100vw, 8%);
+        @include flex-set(column, center, flex-start);
+        background-color: $col-3;
+        
+      }
+      & > main > ul > li{
+        @include width-height(30%, 100% );
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        background-color: $col-3;
+        color: $col-2;
+      }
+      & > main > div{
+        @include width-height(90%, 30% );
+        @include flex-set(column, center, center);
+        background-color: $col-4;
+      }
+      & > main > div > h1> div:nth-child(1){
+        @include width-height(85%, 35%);
+        @include flex-set(column, center, center);
+        background-color: $col-4;
+        color: $col-2;
+      }
+      & > main > div > h1> div:nth-child(2){
+        @include width-height(10%, 10%);
+        background-color: $col-4;
+        color: $col-2;
+      }
+      & > main > div > h1> div:nth-child(3){
+        @include width-height(50%, 1px);
+        @include flex-set(column, center, center);
+        background-color: $col-4;
+        color: $col-2;
+      }
+
+    }
+  }

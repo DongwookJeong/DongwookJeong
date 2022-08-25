@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  #root > header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkgray;
+  }
+  #root > header > ul {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+  }
+  #root > header > ul > li {
+    width: 10vw;
+    height: 10vh;
+    background-color: red;
+  }
+  #root > div {
+    width: 100vw;
+    height: 60vh;
+    background-color: darkgray;
+    color: black;
+  }
+  #root > main {
+    width: 100vw;
+    height: 68vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > article {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > article > h1 {
+    width: 100vw;
+    height: 4vh;
+    background-color: darkgray;
+  }
+  #root > main > article > p {
+    width: 100vw;
+    height: 12vh;
+    background-color: gray;
+  }
+  #root > main > section {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > section > div:nth-child(1) {
+    width: 100vw;
+    height: 7vh;
+    background-color: darkgray;
+  }
+  #root > main > section > div:nth-child(2) {
+    width: 100vw;
+    height: 2vh;
+    background-color: red;
+  }
+  #root > main > section > ul {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+  }
+  #root > main > section > ul > li {
+    width: 10vw;
+    height: 6vh;
+    background-color: darkgray;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #root > header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkgray;
+  }
+  #root > header > ul {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+  }
+  #root > header > ul > li {
+    width: 10vw;
+    height: 10vh;
+    background-color: red;
+  }
+  #root > div {
+    width: 100vw;
+    height: 60vh;
+    background-color: darkgray;
+    color: black;
+  }
+  #root > main {
+    width: 100vw;
+    height: 68vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > article {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > article > h1 {
+    width: 100vw;
+    height: 4vh;
+    background-color: darkgray;
+  }
+  #root > main > article > p {
+    width: 100vw;
+    height: 12vh;
+    background-color: gray;
+  }
+  #root > main > section {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > section > div:nth-child(1) {
+    width: 100vw;
+    height: 7vh;
+    background-color: darkgray;
+  }
+  #root > main > section > div:nth-child(2) {
+    width: 100vw;
+    height: 2vh;
+    background-color: red;
+  }
+  #root > main > section > ul {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+  }
+  #root > main > section > ul > li {
+    width: 10vw;
+    height: 6vh;
+    background-color: darkgray;
+  }
+}
+@media (min-width: 1025px) {
+  #root > header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: darkgray;
+  }
+  #root > header > div {
+    width: 90vw;
+    height: 7vh;
+  }
+  #root > header > ul {
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+  }
+  #root > header > ul > li {
+    width: 3vw;
+    height: 3vh;
+    background-color: red;
+  }
+  #root > div {
+    width: 100vw;
+    height: 60vh;
+    background-color: darkgray;
+    color: black;
+  }
+  #root > main {
+    width: 100vw;
+    height: 68vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > article {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > article > h1 {
+    width: 100vw;
+    height: 4vh;
+    background-color: darkgray;
+  }
+  #root > main > article > p {
+    width: 100vw;
+    height: 12vh;
+    background-color: gray;
+  }
+  #root > main > section {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > main > section > div:nth-child(1) {
+    width: 100vw;
+    height: 7vh;
+    background-color: darkgray;
+  }
+  #root > main > section > div:nth-child(2) {
+    width: 100vw;
+    height: 2vh;
+    background-color: red;
+  }
+  #root > main > section > ul {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+  }
+  #root > main > section > ul > li {
+    width: 5vw;
+    height: 3vh;
+    background-color: darkgray;
+  }
+}/*# sourceMappingURL=video.css.map */

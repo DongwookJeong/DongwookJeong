@@ -1,0 +1,241 @@
+*{box-sizing: border-box; margin: 0; padding: 0; list-style: none;}
+
+// col
+$col-1:red;
+$col-2:black;
+$col-3:gray;
+$col-4: darkgray;
+
+// 믹스인
+
+@mixin flex-set($justify-content, $align-items, $flex-direction:row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+@mixin width-height($width, $height){
+  width: $width;
+  height: $height;
+}
+                                          //css
+#root{
+  @include width-height(100vw,100vh);
+  @include flex-set(flex-start, center, column);
+
+  @media (max-width:768px){
+    & > header{
+      @include width-height(100vw, 20vh);
+      @include flex-set(center, center, column);
+    
+      background-color: $col-4;
+      }
+                                          // & > header > div{} 웹 페이지 너비 공간
+    & > header > ul{
+      @include width-height(100vw, 15vh);
+      @include flex-set(space-around, center, row);
+    
+      background-color: $col-3;
+    }
+    & > header > ul > li{
+      @include width-height(10vw, 10vh);
+    
+      background-color: $col-1;
+    }
+                                          // 모바일 헤더 끝
+                                          // 영상 자리
+    & > div{
+      @include width-height(100vw,60vh);
+
+      background-color: $col-4;
+      color: $col-2;
+    }
+                                          // 영상 소개 자리
+    & > main{
+      @include width-height(100vw,68vh);
+      @include flex-set(flex-start, center, column);
+    }
+    & > main > article{
+      @include width-height(100vw, 16vh);
+      @include flex-set(center, center, column);
+    }
+    & > main > article > h1{
+      @include width-height(100vw, 4vh);
+
+      background-color: $col-4;
+    }
+    & > main > article > p{
+      @include width-height(100vw, 12vh);
+
+      background-color: $col-3;
+    }
+                                          // 영상 컨트롤 
+    & > main > section{
+      @include width-height(100vw, 16vh);
+      @include flex-set(center, center, column);
+    }
+    & > main > section > div:nth-child(1){
+      @include width-height(100vw, 7vh);
+
+      background-color: $col-4;
+    }
+    & > main > section > div:nth-child(2){
+      @include width-height(100vw, 2vh);
+
+      background-color: $col-1;
+    }
+    & > main > section > ul{
+      @include width-height(100vw, 7vh);
+      @include flex-set(flex-start, center, row);
+
+      background-color: $col-3;
+    }
+    & > main > section > ul > li{
+      @include width-height(10vw, 6vh);
+      background-color: $col-4;
+    }
+  }
+                                          // 모바일 끝
+                                          // 태블릿 시작
+@media (min-width:769px) and (max-width:1024px){
+  & > header{
+    @include width-height(100vw, 20vh);
+    @include flex-set(center, center, column);
+  
+    background-color: $col-4;
+    }
+                                        // & > header > div{} 웹 페이지 너비 공간
+  & > header > ul{
+    @include width-height(100vw, 15vh);
+    @include flex-set(space-around, center, row);
+  
+    background-color: $col-3;
+  }
+  & > header > ul > li{
+    @include width-height(10vw, 10vh);
+  
+    background-color: $col-1;
+  }
+                                        // 모바일 헤더 끝
+                                        // 영상 자리
+  & > div{
+    @include width-height(100vw,60vh);
+    background-color: $col-4;
+    color: $col-2;
+  }
+                                        // 영상 소개 자리
+  & > main{
+    @include width-height(100vw,68vh);
+    @include flex-set(flex-start, center, column);
+  }
+  & > main > article{
+    @include width-height(100vw, 16vh);
+    @include flex-set(center, center, column);
+  }
+  & > main > article > h1{
+    @include width-height(100vw, 4vh);
+    background-color: $col-4;
+  }
+  & > main > article > p{
+    @include width-height(100vw, 12vh);
+    background-color: $col-3;
+  }
+                                        // 영상 컨트롤 
+  & > main > section{
+    @include width-height(100vw, 16vh);
+    @include flex-set(center, center, column);
+  }
+  & > main > section > div:nth-child(1){
+    @include width-height(100vw, 7vh);
+    background-color: $col-4;
+  }
+  & > main > section > div:nth-child(2){
+    @include width-height(100vw, 2vh);
+    background-color: $col-1;
+  }
+  & > main > section > ul{
+    @include width-height(100vw, 7vh);
+    @include flex-set(flex-start, center, row);
+    background-color: $col-3;
+  }
+  & > main > section > ul > li{
+    @include width-height(10vw, 6vh);
+    background-color: $col-4;
+  }
+
+  }
+  @media (min-width: 1025px){
+    & > header{
+      @include width-height(100vw, 10vh);
+      @include flex-set(center, center, row-reverse);
+    
+      background-color: $col-4;
+      }
+    & > header > div{
+      @include width-height(90vw, 7vh);
+    } 
+      & > header > ul{
+      @include width-height(10vw, 5vh);
+      @include flex-set(space-around, center, row);
+    
+      background-color: $col-3;
+    }
+    & > header > ul > li{
+      @include width-height(3vw, 3vh);
+    
+      background-color: $col-1;
+    }
+                                          // 모바일 헤더 끝
+                                          // 영상 자리
+    & > div{
+      @include width-height(100vw,60vh);
+
+      background-color: $col-4;
+      color: $col-2;
+    }
+                                          // 영상 소개 자리
+    & > main{
+      @include width-height(100vw,68vh);
+      @include flex-set(flex-start, center, column);
+    }
+    & > main > article{
+      @include width-height(100vw, 16vh);
+      @include flex-set(center, center, column);
+    }
+    & > main > article > h1{
+      @include width-height(100vw, 4vh);
+
+      background-color: $col-4;
+    }
+    & > main > article > p{
+      @include width-height(100vw, 12vh);
+
+      background-color: $col-3;
+    }
+                                          // 영상 컨트롤 
+    & > main > section{
+      @include width-height(100vw, 16vh);
+      @include flex-set(center, center, column);
+    }
+    & > main > section > div:nth-child(1){
+      @include width-height(100vw, 7vh);
+
+      background-color: $col-4;
+    }
+    & > main > section > div:nth-child(2){
+      @include width-height(100vw, 2vh);
+
+      background-color: $col-1;
+    }
+    & > main > section > ul{
+      @include width-height(100vw, 7vh);
+      @include flex-set(flex-start, center, row);
+
+      background-color: $col-3;
+    }
+    & > main > section > ul > li{
+      @include width-height(5vw, 3vh);
+      background-color: $col-4;
+    }
+  }
+}

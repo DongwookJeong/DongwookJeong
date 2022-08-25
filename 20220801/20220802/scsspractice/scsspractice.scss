@@ -1,0 +1,23 @@
+body{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div > div:nth-child(1){
+  background-color: aqua;
+  width: 20vw;
+  height: auto;
+}
+div > div:nth-child(2){
+  background-color: red;
+  width: 20vw;
+  height: auto;
+}
+div > div:nth-child(3){
+  background-color: burlywood;
+  width: 20vw;
+  height: auto;
+}
